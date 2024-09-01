@@ -1,27 +1,31 @@
-# 流程记录助手
+# Progress-Manager
 
-这个项目是用来记录流程进度的。
+[切换到中文](./README.zh-CN.md)
 
-主要功能是：  
-* 流程的增删改  
-* 流程节点的增删改  
+This is an application that can help you to manage progress.   
+Features: 
+* manage progress, 
+* manage progress-step-node, 
+* import and export by JSON file.
 
-> 后续可能加入查询、统计、排序等功能。  
 
-## 数据存储
-这个项目不需要联网，数据存储在localStorage.
-支持导入和导出JSON文件。
+> pending features: search, statistics, sort...  
 
-> 只能导入由此项目导出的JSON文件，否则格式不匹配无法导入。
+## Data Storage
+The Data of this application is stored in the local storage of the browser.
+And the data can be import or export by JSON file.
 
-## 界面适配
-对移动端仅作简单适配，建议使用电脑端打开。
+> So far, the JSON file that was imported must be a JSON file that was exported by this application.  
+> Or it will cause an error, because the data structure is different and cannot be parsed.
 
-## 运行环境
+## Responsive Design
+Currently, I have only done some simple adaptation work on the mobile terminal. So I suggest you to use it on PC.
+
+## environment
 * node v18.17.0
 * pnpm 8.14.1
 
-## 运行项目
+## how to run
 * 开发模式：
 ```
 npm run dev
