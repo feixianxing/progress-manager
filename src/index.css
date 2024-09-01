@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* 整个滚动条的宽度和高度 */
+::-webkit-scrollbar {
+  width: 6px; /* 对于垂直滚动条 */
+  height: 6px; /* 对于水平滚动条 */
+  transition: all 0.5s;
+}
+
+::-webkit-scrollbar:hover{
+  width: 8px;
+  height: 8px;
+}
+
+/* 滚动条的轨道样式 */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* 滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+
+/* 悬停时的滑块样式 */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* 滚动条角落的样式 */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
